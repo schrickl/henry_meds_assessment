@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:reservation_system/pages/client_page.dart';
 import 'package:reservation_system/pages/provider_page.dart';
-import 'package:reservation_system/pages/schedule.dart';
-import 'package:reservation_system/widgets/calendar_widget.dart';
-import 'package:syncfusion_flutter_calendar/calendar.dart';
 
 void main() {
   runApp(const MyApp());
@@ -106,27 +103,6 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
               ),
               const SizedBox(height: 16.0), // Add some spacing between buttons
-              ElevatedButton(
-                onPressed: () {
-                  // Handle the second button press
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => const BookingCalendarDemoApp(),
-                    ),
-                  );
-                },
-                style: TextButton.styleFrom(
-                  fixedSize: const Size(200, 50), // Set the button size
-                  foregroundColor: Colors.white, // Set the text color
-                  backgroundColor: Colors.blue, // Set the background color
-                ),
-                child: const Text(
-                  'Test',
-                  style: TextStyle(
-                    fontSize: 20.0,
-                  ),
-                ),
-              ),
             ],
           ),
         ),

@@ -9,6 +9,12 @@ Build the app with the following command:
 
 ```flutter build apk```
 
+Then install the app with the following command:
+
+```flutter install```
+
+The android build is located at the root of the repository: `app-release.apk`
+
 ## Assumptions
 To keep it simple, the app really only has the concept of one Provider and
 one Client.
